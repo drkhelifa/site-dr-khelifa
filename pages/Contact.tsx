@@ -126,22 +126,18 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Map Column */}
-          <div className="bg-slate-200 rounded-xl overflow-hidden shadow-sm h-full min-h-[400px] relative">
-            <div className="absolute inset-0 bg-slate-300 flex items-center justify-center flex-col p-8 text-center bg-[url('https://picsum.photos/seed/maptexture/800/800')] bg-cover bg-blend-overlay">
-              <div className="bg-white/90 p-8 rounded-xl backdrop-blur-sm max-w-sm shadow-xl">
-                <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-primary mb-2">{t.locationTitle}</h3>
-                <p className="text-slate-600 mb-6">{CONTACT_INFO.address[lang]}<br/>{CONTACT_INFO.city[lang]}</p>
-                <a 
-                  href={CONTACT_INFO.mapsLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-block bg-primary text-white py-3 px-6 rounded-md hover:bg-slate-800 transition-colors font-medium shadow-md"
-                >
-                  {t.gpsBtn}
-                </a>
-              </div>
-            </div>
+          <div className="bg-slate-200 rounded-xl overflow-hidden shadow-sm h-full min-h-[400px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3200.1988754732797!2d3.0903776557895886!3d36.6697190760339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c6c3cab3022bedf%3A0x9f3663423d9e08f8!2sDr%20Khelifa%20Psychiatre%20Psychoth%C3%A9rapeute%20Baraki!5e0!3m2!1sfr!2sdz!4v1789463743641!5m2!1sfr!2sdz"
+              title={t.locationTitle}
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              className="w-full h-full min-h-[400px]"
+            />
           </div>
         </div>
 

@@ -9,12 +9,14 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Tips from './pages/Tips';
 import { BlogProvider } from './context/BlogContext';
+import GoogleAnalytics from './components/GoogleAnalytics';
 
 function App() {
   return (
     <HelmetProvider>
       <BlogProvider>
         <Router>
+          <GoogleAnalytics />
           <Layout>
             <Routes>
               <Route path="/" element={<Home />} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Brain, ShieldCheck, Heart, ArrowLeft } from 'lucide-react';
-import { CONTACT_INFO } from '../constants';
+import { CONTACT_INFO, HORAIRES } from '../constants';
 import { useLanguage } from '../components/Layout';
 import SEO from '../components/SEO';
 
@@ -99,6 +99,39 @@ const Home: React.FC = () => {
               <p className="text-slate-600">
                 {t.personalDesc}
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location and Hours */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-[1fr_1.4fr] items-start">
+            <div>
+              <h2 className={`text-3xl font-bold tracking-tight text-primary ${!isRTL && 'font-serif'}`}>
+                {t.locationTitle}
+              </h2>
+              <p className="mt-4 text-lg font-medium text-slate-700">
+                {CONTACT_INFO.address[lang]}, {CONTACT_INFO.city[lang]}
+              </p>
+              <Link
+                to="/contact"
+                className="inline-flex mt-6 items-center rounded-md bg-secondary px-5 py-3 font-medium text-white transition-colors hover:bg-emerald-600"
+              >
+                {t.mapsLabel} <Arrow className="ml-2 rtl:ml-0 rtl:mr-2 h-4 w-4" />
+              </Link>
+            </div>
+            <div className="rounded-xl bg-slate-50 p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-primary">{t.scheduleTitle}</h3>
+              <div className="mt-4 grid gap-2 sm:grid-cols-2">
+                {HORAIRES.map((item) => (
+                  <div key={item.day.fr} className="flex justify-between gap-4 border-b border-slate-200 py-2 text-sm">
+                    <span className="font-medium text-slate-700">{item.day[lang]}</span>
+                    <span className="font-mono text-slate-600">{item.hours[lang]}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

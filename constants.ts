@@ -273,7 +273,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 3,
     title: { fr: "Le Burn-out : Quand le travail rend malade", ar: "الاحتراق المهني: عندما يمرضك العمل" },
-    excerpt: { fr: "L'épuisement professionnel est un processus lent. Comprendre les étapes pour mieux le prévenir et le guérir.", ar: "الإرهاق المهني عملية بطيئة. فهم المراحل للوقاية والعلاج بشكل أفضل." },
+    excerpt: { fr: "L'épuisement professionnel est un processus lent. Comprendre les étapes pour mieux le prévenir et le guérir.", ar: "الإرهاق المهني عملي�� بطيئة. فهم المراحل للوقاية والعلاج بشكل أفضل." },
     date: { fr: "10 Septembre 2023", ar: "10 سبتمبر 2023" },
     content: {
       fr: `Le syndrome d'épuisement professionnel, ou burn-out, n'apparaît pas du jour au lendemain. C'est le résultat d'un stress chronique au travail qui n'a pas été géré correctement. Il touche souvent les personnes très engagées, perfectionnistes, qui ne comptent pas leurs heures.
@@ -290,7 +290,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       تحدث العملية غالبًا في ثلاثة أبعاد:
       1. الإرهاق العاطفي: هذه هي العلامة الأولى. يشعر الشخص بالفراغ، ونفاد الموارد، وعدم القدرة على التعافي حتى بعد عطلة نهاية الأسبوع.
-      2. تبدد الشخصية (أو السخرية): لحماية نفسه، يطور الشخص موقفًا منفصلاً، سلبيًا، أو حتى غير مبالٍ تجاه الزملاء أو العملاء. يصبح الشخص "روبوتيًا".
+      2. تبدد الشخصية (أو السخرية): لحماية نفسه، يطور الشخص موقفًا منفصلاً، سلبيًا، أو حتى غ��ر مبالٍ تجاه الزملاء أو العملاء. يصبح الشخص "روبوتيًا".
       3. فقدان الإنجاز الشخصي: الشعور بعدم الفعالية، وعدم الكفاءة، وأن العمل لم يعد له معنى.
 
       الأسباب متعددة: عبء العمل الزائد، نقص التقدير، تضارب القيم، نقص الاستقلالية.
@@ -423,7 +423,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       الوساوس هي أفكار، صور، أو دوافع تطفلية تعود باستمرار وتسبب قلقًا كبيرًا. أمثلة: الخوف من التلوث، الخوف من نسيان الغاز، الخوف من إيذاء شخص ما.
 
-      الأفعال القهرية هي سلوكيات متكررة أو أفعال عقلية يشعر الشخص بأنه مجبر على القيام بها لتحييد قلق الوسواس. أمثلة: غسل اليدين حتى النزيف، التحقق من الأقفال، العد، تكرار جمل معينة.
+      الأفعال القهرية هي سلوكيات متكررة أو أفعال عقلية يشعر الشخص بأنه مجبر على القيام بها لتحييد قلق الوسواس. أمثلة: غسل اليدين حتى النزيف، التحقق من الأقفال، ��لعد، تكرار جمل معينة.
 
       المشكلة هي أن الفعل القهري يخفف القلق مؤقتًا فقط. وسرعان ما يعود الوسواس، ويجب إعادة الطقوس. إنها حلقة مفرغة جحيمية قد تستغرق ساعات كل يوم.
 
@@ -541,14 +541,14 @@ export const BLOG_POSTS: BlogPost[] = [
 ];
 
 export const HORAIRES: ScheduleItem[] = [
-  { day: { fr: "Samedi", ar: "السبت" }, hours: { fr: "09:00 - 16:00", ar: "09:00 - 16:00" } },
-  { day: { fr: "Dimanche", ar: "الأحد" }, hours: { fr: "09:00 - 16:00", ar: "09:00 - 16:00" } },
-  { day: { fr: "Lundi", ar: "الإثنين" }, hours: { fr: "09:00 - 16:00", ar: "09:00 - 16:00" } },
-  { day: { fr: "Mardi", ar: "الثلاثاء" }, hours: { fr: "09:00 - 16:00", ar: "09:00 - 16:00" } },
-  { day: { fr: "Mercredi", ar: "الأربعاء" }, hours: { fr: "09:00 - 16:00", ar: "09:00 - 16:00" } },
-  { day: { fr: "Jeudi", ar: "الخميس" }, hours: { fr: "09:00 - 16:00", ar: "09:00 - 16:00" } },
-  { day: { fr: "Vendredi", ar: "الجمعة" }, hours: { fr: "Fermé", ar: "مغلق" } },
-];
+ { day: { fr: "Samedi", ar: "السبت" }, hours: { fr: "09:00 - 16:00", ar: "09:00 - 16:00" } },
+ { day: { fr: "Dimanche", ar: "الأحد" }, hours: { fr: "09:00 - 15:30", ar: "09:00 - 15:30" } },
+ { day: { fr: "Lundi", ar: "الإثنين" }, hours: { fr: "09:00 - 15:30", ar: "09:00 - 15:30" } },
+ { day: { fr: "Mardi", ar: "الثلاثاء" }, hours: { fr: "09:00 - 15:30", ar: "09:00 - 15:30" } },
+ { day: { fr: "Mercredi", ar: "الأربعاء" }, hours: { fr: "09:00 - 15:30", ar: "09:00 - 15:30" } },
+ { day: { fr: "Jeudi", ar: "الخميس" }, hours: { fr: "09:00 - 12:00", ar: "09:00 - 12:00" } },
+ { day: { fr: "Vendredi", ar: "الجمعة" }, hours: { fr: "Fermé", ar: "مغلق" } },
+  ];
 
 export const TRANSLATIONS = {
   fr: {

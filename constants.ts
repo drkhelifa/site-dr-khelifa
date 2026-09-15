@@ -5,8 +5,8 @@ export const CONTACT_INFO: ContactInfo = {
   phone: "0665416904",
   whatsappFull: "213665416904",
   address: {
-    fr: "Lot 261, 1er étage",
-    ar: "قطعة 261، الطابق الأول"
+    fr: "Hai Rocazane, 667 B, 1er étage",
+    ar: "حي روكازان، 667 ب، الطابق الأول"
   },
   city: {
     fr: "Baraki, Alger",
